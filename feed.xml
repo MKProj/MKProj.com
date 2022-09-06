@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DEV Community 👩‍💻👨‍💻: Mustafif </title>
+    <description>The latest articles on DEV Community 👩‍💻👨‍💻 by Mustafif  (@mustafif).</description>
+    <link>https://dev.to/mustafif</link>
+    <image>
+      <url>https://res.cloudinary.com/practicaldev/image/fetch/s--5H4alvfh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/801029/a53eb163-9077-4c4d-b3c7-8f07f0b9aa76.png</url>
+      <title>DEV Community 👩‍💻👨‍💻: Mustafif </title>
+      <link>https://dev.to/mustafif</link>
+    </image>
+    <atom:link rel="self" type="application/rss+xml" href="https://dev.to/feed/mustafif"/>
+    <language>en</language>
+    <item>
+      <title>News on MKProj.com &amp; TexCreate v3</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Fri, 26 Aug 2022 23:43:00 +0000</pubDate>
+      <link>https://dev.to/mustafif/news-on-mkprojcom-texcreate-v3-58e2</link>
+      <guid>https://dev.to/mustafif/news-on-mkprojcom-texcreate-v3-58e2</guid>
+      <description>&lt;p&gt;I have been reticent, and that is because of having a jam-packed summer, considering two jobs, writing a book, and summer school. That doesn't stop me from planning the future, and that's why mkproj.com &amp;amp; TexCreate haven't been maintained in months. &lt;/p&gt;
+
+&lt;p&gt;This post will not go into details of TexCreate v3 new features because there's still a lot to figure out, but here is one of my new concepts that will solve some key issues: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Difficulty of adding new prebuilt templates &lt;/li&gt;
+&lt;li&gt;Not the best way to add custom templates &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My solution to this problem is to have a server built into mkproj.com to manage templates using either TOML or JSON files. How would this be possible? Well, TexCreate v3 will use TexCore as the way to build LaTeX code in Rust and will use it to create a document using an array of &lt;strong&gt;Any&lt;/strong&gt; structs. &lt;/p&gt;
+
+&lt;p&gt;My idea is to add a tool in TexCreate to allow users a way to create a cargo project, edit a &lt;em&gt;template.rs&lt;/em&gt;  file, and when you run the project, it will proceed to process and send a file to the server. &lt;/p&gt;
+
+&lt;p&gt;My goal is to allow TexCreate to be more modular, and mkproj.com to be more complex. I want to properly create a page processor, public archive of custom &amp;amp; prebuilt LaTeX templates, and I want to build it in a way that I can keep working on it without it being a pain. &lt;/p&gt;
+
+&lt;p&gt;This work is very ambitious, will take a long time, and may not even happen, this is a concept. But I'm very excited to try to make it a reality. &lt;/p&gt;
+
+&lt;p&gt;If there is any features you'd like in TexCreate v3 or mkproj.com, please make sure to comment!&lt;/p&gt;
+
+</description>
+      <category>rust</category>
+      <category>opensource</category>
+    </item>
+    <item>
+      <title>Mufi Lang v0.1.0 Released</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Mon, 27 Jun 2022 00:54:02 +0000</pubDate>
+      <link>https://dev.to/mustafif/mufi-lang-v010-released-3a4b</link>
+      <guid>https://dev.to/mustafif/mufi-lang-v010-released-3a4b</guid>
+      <description>&lt;p&gt;Mufi v0.1.0 is finally out after starting to work on it at around March. The language is fairly small, documentation is still in progress but the actual language is readily available to download. &lt;/p&gt;
+
+&lt;p&gt;The language uses a C bytecode compiler and a standard library written in Rust utilizing C bindings. This release, codenamed &lt;em&gt;Baloo&lt;/em&gt; is purposely unoptimized, v0.2.0 will be and using a benchmarking program written in the repo, it will help compare the performance gains between them. &lt;/p&gt;
+
+&lt;p&gt;The language is only officially supported for Unix systems, Windows is sadly complicated to set up in my native Linux environment, but I am still looking to add some functionality to provide Windows support. &lt;/p&gt;
+
+&lt;p&gt;For installation instructions look at the README in the &lt;a href="https://github.com/MKProj/Mufi-Lang"&gt;repo&lt;/a&gt;. &lt;/p&gt;
+
+</description>
+      <category>c</category>
+      <category>computerscience</category>
+      <category>programming</category>
+      <category>rust</category>
+    </item>
+    <item>
+      <title>Opinions on Rust?</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Wed, 08 Jun 2022 23:21:49 +0000</pubDate>
+      <link>https://dev.to/mustafif/opinions-on-rust-4be3</link>
+      <guid>https://dev.to/mustafif/opinions-on-rust-4be3</guid>
+      <description>&lt;p&gt;What are your opinion on the rapidly growing language, Rust?&lt;/p&gt;
+
+</description>
+      <category>discuss</category>
+      <category>rust</category>
+      <category>programming</category>
+    </item>
+    <item>
+      <title>TexCreate v2.3 Plans</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Tue, 17 May 2022 21:41:47 +0000</pubDate>
+      <link>https://dev.to/mustafif/texcreate-v23-plans-3k8k</link>
+      <guid>https://dev.to/mustafif/texcreate-v23-plans-3k8k</guid>
+      <description>&lt;p&gt;I would be lying if I said I haven't looked at TexCreate in a while as starting up &lt;code&gt;Mufi-Lang&lt;/code&gt; has been eating much of my development time. But I also have been getting some more ideas of what else to add and the future of the project. &lt;/p&gt;
+
+&lt;p&gt;First off, TexCreate has hit over 2K downloads!!! I'm honestly quite happy to see people downloading my project, and it motivates me to make it better. So let's go through some of the new changes I want to implement: &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Release Model
+&lt;/h2&gt;
+
+&lt;p&gt;My plans for releases is to release a new minor version or patch every 2 months to provide enough time between working on &lt;code&gt;TexCreate&lt;/code&gt; and &lt;code&gt;Mufi-Lang&lt;/code&gt;. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Changes for 2.3
+&lt;/h2&gt;
+
+&lt;p&gt;These are some of the new changes I plan on implementing: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fixes to &lt;code&gt;texc-web&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Currently has issues related to temporary directories &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;Using &lt;code&gt;tectonic&lt;/code&gt; as the compiler to provide everything being Rust.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This doesn't seem too much, but it's impact is quite a lot. First off fixing &lt;code&gt;texc-web&lt;/code&gt; will allow me to finally add it to the TexCreate website and adding &lt;code&gt;tectonic&lt;/code&gt; will remove the need for &lt;code&gt;texcreate.toml&lt;/code&gt; and make the whole compile situation more seamless. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Expected Arrival
+&lt;/h2&gt;
+
+&lt;p&gt;I hope to implement and release these changes within 2 months, and it gives me enough time to not rush any code, and bring any other changes that may come up. &lt;/p&gt;
+
+</description>
+      <category>tex</category>
+      <category>programming</category>
+      <category>opensource</category>
+      <category>news</category>
+    </item>
+    <item>
+      <title>What's Your Fav Lang?</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Thu, 12 May 2022 00:32:53 +0000</pubDate>
+      <link>https://dev.to/mustafif/whats-your-fav-lang-4i0e</link>
+      <guid>https://dev.to/mustafif/whats-your-fav-lang-4i0e</guid>
+      <description>&lt;p&gt;What's your favourite programming language? Any particular reason like difficulty/learning curve, job prospect, tools, etc. &lt;/p&gt;
+
+&lt;p&gt;For me personally, it's Rust, one reason is that I love all the tools integrated into Cargo, the language's syntax that just works like how I think, and the memory/thread safety in safe Rust. &lt;/p&gt;
+
+&lt;p&gt;I always see myself using it in some way, even in my own programming language that's written in C, guess what going to make all of the documentation (html/man pages), exactly it's Rust!&lt;/p&gt;
+
+&lt;p&gt;Please feel free to comment your favourite language and some reasons of why. &lt;/p&gt;
+
+</description>
+      <category>programming</category>
+      <category>computerscience</category>
+      <category>discuss</category>
+    </item>
+    <item>
+      <title>Compiler in C not Rust | Mufi Lang</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Thu, 05 May 2022 00:10:41 +0000</pubDate>
+      <link>https://dev.to/mustafif/compiler-in-c-not-rust-mufi-lang-53lk</link>
+      <guid>https://dev.to/mustafif/compiler-in-c-not-rust-mufi-lang-53lk</guid>
+      <description>&lt;p&gt;I haven't written in a while mostly because I've been busy, and spent my free time writing Mufi-Lang. &lt;/p&gt;
+
+&lt;p&gt;I spent some time trying to figure out what language to write the byte code compiler in, and I felt the biggest fun would be writing it in C. One reason, I don't have much projects in C, two, I learned how to write a compiler in C, and three, why the hell not? &lt;/p&gt;
+
+&lt;p&gt;Don't think I tried Rust, I really did, but too keep originality in my code, sticking with just standard library, I felt C was my shining knight. Now in no way am I saying C is a better choice, or Rust is one, I'm giving the lazy reasons of why I chose one over the other, and these reasons are based upon comfort. &lt;/p&gt;
+
+&lt;p&gt;I have a lot of plans for Mufi, I plan to first release in Unix systems using a Python setup script, and I'll have to figure out things like Winget, Snap and such. I will also write documentation in markdown to get started, probably have a simple website on it. &lt;/p&gt;
+
+&lt;p&gt;In &lt;code&gt;0.1.0&lt;/code&gt; I do not anticipate of having any type of import system, and instead you'll just have to rely on the standard library that will mainly have file operations, math functions and such. &lt;/p&gt;
+
+&lt;p&gt;This language will grow gradually, and I do want to get contributors to expand it's capability. I know it's not going to go big, but just writing it is an euphoria. &lt;/p&gt;
+
+&lt;p&gt;The first release &lt;em&gt;Baloo&lt;/em&gt; will be expected to release in the next month or two, and after that updates will come in a release cycle. &lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href="https://github.com/MKProj/Mufi-Lang"&gt;repo&lt;/a&gt; to see more of the project. &lt;/p&gt;
+
+</description>
+      <category>c</category>
+      <category>programming</category>
+      <category>computerscience</category>
+    </item>
+    <item>
+      <title>TexCreate v2.2 Released!</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Tue, 19 Apr 2022 21:28:39 +0000</pubDate>
+      <link>https://dev.to/mustafif/texcreate-v22-released-16kp</link>
+      <guid>https://dev.to/mustafif/texcreate-v22-released-16kp</guid>
+      <description>&lt;p&gt;After releasing Version 2.1, I wanted to focus some more attention on templates, so you can probably guess what is new with this minor update. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Added Custom Template support
+&lt;/h2&gt;
+
+&lt;p&gt;So a big update is custom template, and it's best I explain this first, so people understand how to do it. &lt;/p&gt;
+
+&lt;p&gt;To create a custom template, you will need two files, &lt;code&gt;main.texcreate&lt;/code&gt; and &lt;code&gt;structure.texcreate&lt;/code&gt;, without these your build will fail. &lt;/p&gt;
+
+&lt;p&gt;Let's create a template called &lt;code&gt;Simple_Report&lt;/code&gt;, here's the steps: &lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Step 0 - Make sure to have TexCreate v2.2.1
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;# if you don't have it installed already 
+$ cargo install texcreate
+# if you have it installed 
+$ texcreate update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h3&gt;
+  
+  
+  Step 1 - Create the Directory
+&lt;/h3&gt;
+
+
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;# Create the directory and necessary files 
+$ mkdir Simple_Report 
+$ cd Simple_Report 
+$ touch main.texcreate &amp;amp;&amp;amp; touch structure.texcreate 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h3&gt;
+  
+  
+  Step 2 - Add the content into your templates
+&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;main.texcreate&lt;/code&gt;: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Contains all necessary code for the body &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;
+
+&lt;p&gt;&lt;code&gt;structure.texcreate&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Contains all packages, and extra meta information&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;
+  
+  
+  Step 3 - Define the custom template inside &lt;code&gt;config.toml&lt;/code&gt;
+&lt;/h3&gt;
+
+&lt;p&gt;Remove the &lt;code&gt;template&lt;/code&gt; field and instead replace it with a &lt;code&gt;custom_template&lt;/code&gt; field, and add the path to &lt;code&gt;Simple_Report&lt;/code&gt;. With this set, you can now use your very own custom template. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Added Templates
+&lt;/h2&gt;
+
+&lt;p&gt;With custom templates available, I also added 2 new prebuilt templates, Dictionary and News. These new templates allow users to create their own dictionary and newspapers, with that said, I also added a new function &lt;code&gt;no_maketitle()&lt;/code&gt; to &lt;code&gt;tex_rs::Latex&lt;/code&gt; which will disable &lt;code&gt;\maketitle&lt;/code&gt; being written to the body of the document (Used in Dictionary and News Templates). &lt;/p&gt;
+
+&lt;p&gt;With that said we now have 11 Templates available, all being available on &lt;code&gt;texcreate --list&lt;/code&gt; or as shown below:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;=======================
+  Available Templates
+=======================
+==&amp;gt; Basic: Designed for simple documents
+==&amp;gt; Math: Designed for math focused documents
+==&amp;gt; Theatre: Designed to write plays/shows
+==&amp;gt; Code: Designed to write code using listings
+==&amp;gt; Novel: Designed to write well...novels
+==&amp;gt; Beamer: Designed to create presentations
+==&amp;gt; Lachaise: Designed for school assignments and academic papers
+==&amp;gt; Lachaise-Mod: Modified version of Lachaise Template, changes in colours/design
+==&amp;gt; Dictionary: Designed to write your own dictionary
+==&amp;gt; News: Designed to write columned newspapers
+=======================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+</description>
+      <category>programming</category>
+      <category>tex</category>
+      <category>opensource</category>
+      <category>news</category>
+    </item>
+    <item>
+      <title>TexCreate v2.1 Released!</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Mon, 18 Apr 2022 18:04:19 +0000</pubDate>
+      <link>https://dev.to/mustafif/texcreate-v21-released-2boi</link>
+      <guid>https://dev.to/mustafif/texcreate-v21-released-2boi</guid>
+      <description>&lt;p&gt;TexCreate hasn't seen some change in a little while, and that was mostly me not realizing errors in the flags, but what are the changes?&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Added Template
+&lt;/h3&gt;
+
+&lt;p&gt;I haven't added a new template in a while, so what is this new template? Well it's a modified version of the Lachaise template, with added colors for the graphics, and some less noticeable changes like no more rounded corners. &lt;/p&gt;
+
+&lt;p&gt;I do want to add in other templates like resumes, newspapers, etc.&lt;/p&gt;
+
+&lt;h3&gt;
+  
+  
+  Force Build
+&lt;/h3&gt;
+
+&lt;p&gt;In TexCreate there are several error checkers for things like missing fields, beamer not having a beamer document class, invalid templates, and such. The force flag is used to ignore the error checker, and force the project to be built. &lt;/p&gt;
+
+&lt;p&gt;To do this, use the &lt;code&gt;--force&lt;/code&gt; flag on the &lt;code&gt;build&lt;/code&gt; command:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;$ texcreate build --force
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;h2&gt;
+  
+  
+  Concepts Being Considered
+&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Custom templates 
+
+&lt;ul&gt;
+&lt;li&gt;I really want to add this, but currently considering how to implement it effectively &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/li&gt;
+&lt;li&gt;TexCreate script interpreter &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As usual feel free to comment features or changes you'd like, or create a new Issue on &lt;a href="https://github.com/MKProj/texcreate"&gt;texcreate&lt;/a&gt;&lt;/p&gt;
+
+</description>
+      <category>programming</category>
+      <category>tex</category>
+      <category>news</category>
+    </item>
+    <item>
+      <title>Any Golang?</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Thu, 14 Apr 2022 01:32:07 +0000</pubDate>
+      <link>https://dev.to/mustafif/any-golang-291e</link>
+      <guid>https://dev.to/mustafif/any-golang-291e</guid>
+      <description>&lt;p&gt;Golang and Rust are often compared to each other as they were relatively released in the &lt;em&gt;same time&lt;/em&gt; (Nov 2009 &amp;amp; July 2010 respectively), Rust uses the idea of ownership to manage memory, while Golang utilizes a smart garbage compiler. Both are very fast as they use native compilers, and are mainly used for systems programming, so am I gonna use Golang? &lt;/p&gt;
+
+&lt;p&gt;I've thought about this question quite a lot because before I knew what Rust was, I mainly used Golang, however I haven't touched it for years, and so seeing it again feels weird, and will take time to get used to it. &lt;/p&gt;
+
+&lt;p&gt;I am really considering writing Mufi in Golang, but I also want to build projects that utilize Golang, C and Rust, not sure of the project, maybe another project manager, but my lack of Golang projects is also because of my lack of experience in the language. I understand the general, but I have yet to build any meaningful projects with it, and without projects to stem off from, I haven't gone too far with the language. &lt;/p&gt;
+
+&lt;p&gt;I've also considered learning machine learning using Golang, and it's a huge possibility, but I will look more into machine learning once I get a firmer stance in linear algebra which I'm learning next year. Golang is an amazing language, and it's definitely something I want under my belt, so I definitely want to learn it by some type of project (most likely a compiler or machine learning). &lt;/p&gt;
+
+&lt;p&gt;Please feel free to comment ideas of projects I can build with Go &lt;/p&gt;
+
+</description>
+      <category>go</category>
+      <category>programming</category>
+    </item>
+    <item>
+      <title>Why no Python in MKProj?</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Mon, 11 Apr 2022 14:06:22 +0000</pubDate>
+      <link>https://dev.to/mustafif/why-no-python-in-mkproj-fdk</link>
+      <guid>https://dev.to/mustafif/why-no-python-in-mkproj-fdk</guid>
+      <description>&lt;p&gt;If you are not aware in my GitHub organization repos, the top language is Rust and there is almost no Python, but why?&lt;/p&gt;
+
+&lt;p&gt;Short answer, doesn't fit my needs, but let's explore why. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Speed and Performance
+&lt;/h2&gt;
+
+&lt;p&gt;Python is an easy to read programming language which is a key reason it's an attractive choice for beginners, but I honestly don't care about that, and if anything leaves me wondering where I should start. &lt;br&gt;
+Python is not a fast language, and considering its an interpreted language and garbage compiled, there's overhead in the programs, this isn't attractive to low latency applications I'd like to write. &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Why Rust?
+&lt;/h2&gt;
+
+&lt;p&gt;Rust is one of my favourite language because it does what I want it to do, and considering I've been using it the longest, I think in terms of Rust. I don't mind the whole borrowing fiasco, and I love the community which makes me want to be more involved in the language (one motivation of why I'm learning compilers). &lt;/p&gt;
+
+&lt;h2&gt;
+  
+  
+  Will I ever use Python
+&lt;/h2&gt;
+
+&lt;p&gt;My idea of using Python would be simple one file program that does a task that I'm too lazy to make a &lt;code&gt;Makefile&lt;/code&gt; or bash script for. This could be zipping up files, packaging or publishing, using Python for those are not a problem for me, but for a big project, I'd aim for using Rust or C to make my life a little bit easier. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Note: Most projects in MKProjects are built for command lines or backend development, I do understand Python can work in those environments, but I have had an easier experience with Rust or C.  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+      <category>python</category>
+      <category>programming</category>
+    </item>
+    <item>
+      <title>TexCreate Version 2 Released!!!</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Mon, 04 Apr 2022 16:05:24 +0000</pubDate>
+      <link>https://dev.to/mustafif/texcreate-version-2-released-2e3b</link>
+      <guid>https://dev.to/mustafif/texcreate-version-2-released-2e3b</guid>
+      <description>&lt;p&gt;After breaking TexCreate over and over again, I am happy to announce that the stable TexCreate version 2 is released, and has already received 2 patches since I forgot about the &lt;code&gt;doc&lt;/code&gt; command. &lt;/p&gt;
+
+&lt;p&gt;While coming up with what should come with the new release, I had to truncate a lot of what was considered. After much consideration, I will no longer support the &lt;code&gt;MaTeX&lt;/code&gt; language, and actually I will no longer maintain it (in favour of creating Mufi), and I will instead focus on customization. &lt;/p&gt;
+
+&lt;p&gt;I do want to introduce custom templates, but I am still trying to find a way to do it, and of course add more templates, which will be easier now with &lt;code&gt;texc-latex&lt;/code&gt; and &lt;code&gt;texc-config&lt;/code&gt;. Along with that I do want to port this project into other languages, like Python and C (using FFI) to allow for a variety of flavors. &lt;/p&gt;
+
+&lt;p&gt;Anyways I hope everyone loves this new version and over the next few weeks I will be working on optimizations in the programs, and &lt;br&gt;
+update everything related to this new release (MKProj.com and Texcreate.mkproj.com). &lt;/p&gt;
+
+</description>
+      <category>rust</category>
+      <category>tex</category>
+      <category>mkprojects</category>
+      <category>programming</category>
+    </item>
+    <item>
+      <title>Mufi Concept Toy-Lang</title>
+      <dc:creator>Mustafif </dc:creator>
+      <pubDate>Wed, 30 Mar 2022 19:29:14 +0000</pubDate>
+      <link>https://dev.to/mustafif/mufi-concept-toy-lang-1j0f</link>
+      <guid>https://dev.to/mustafif/mufi-concept-toy-lang-1j0f</guid>
+      <description>&lt;p&gt;I've been considering implementing my own toy language (which I hope I can expand to a more production) once I finish reading reading Robert Nystorms &lt;a href="http://craftinginterpreters.com"&gt;Crafting Interpreters&lt;/a&gt;. This language similar to &lt;code&gt;clox&lt;/code&gt; in the book will be written with a byte-code compiler in either C or Rust. My current idea is to go C, and down the line start porting it to Rust if I'd like, so how does the language look like?&lt;/p&gt;
+
+&lt;p&gt;Well it will be an OOP Language, so it will feature things like classes, and follow a C-style syntax. Let's look at a sample program to get a better idea:&lt;br&gt;
+&lt;/p&gt;
+
+&lt;div class="highlight js-code-highlight"&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;class Foo{
+   var member1;
+   var member2;
+   func new(val1, val2){
+      member1 = val1;
+      member2 = val2;
+   }
+}
+
+func main(){
+   var foo = new Foo(5, 4);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;This is a rough idea, but again this is all concept and can easily change. I will probably start off as a dynamic typing, but as a preference I'd like to make the language statically typed, and have separate mutable and immutable bindings like &lt;code&gt;var/const&lt;/code&gt;. This language will have a garbage compiler (a mediocre one), and will start with a builtin standard library. &lt;/p&gt;
+
+&lt;p&gt;I already made a little logo for the language, comment your thoughts about this project, and contributors are welcomed to join this interesting, and pain with the fun project. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://res.cloudinary.com/practicaldev/image/fetch/s--FR_-JphY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bac9xat1sszkwz0epp87.png" class="article-body-image-wrapper"&gt;&lt;img src="https://res.cloudinary.com/practicaldev/image/fetch/s--FR_-JphY--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bac9xat1sszkwz0epp87.png" alt="Mufi-Lang Logo" width="500" height="500"&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+      <category>programming</category>
+      <category>computerscience</category>
+    </item>
+  </channel>
+</rss>
