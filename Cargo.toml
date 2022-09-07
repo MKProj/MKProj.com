@@ -11,3 +11,5 @@ rss = "2.0.1"
 crossbeam = "0.8.2"
 chrono = "0.4.22"
 lazy_static = "1.4.0"
+serde = {version = "1", features = ["derive"]}
+toml = "0.5.9"

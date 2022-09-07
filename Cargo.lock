@@ -868,6 +868,8 @@ dependencies = [
  "lazy_static",
  "rocket",
  "rss",
+ "serde",
+ "toml",
 ]
 
 [[package]]
