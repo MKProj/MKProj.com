@@ -46,12 +46,12 @@
         <h5>Dashboard</h5>
     </div>
     <div class="w3-bar-block">
-        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+        <a href="" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
            onclick="w3_close()" title="close menu"><i class="fa fa-remove"></i>  Close Menu</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i>  Home</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-folder fa-fw"></i>  Current
+        <a href="/" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i>  Home</a>
+        <a href="/curr_proj" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-folder fa-fw"></i>  Current
             Projects</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-code fa-fw"></i>  TexCreate
+        <a href="/texc" class="w3-bar-item w3-button w3-padding"><i class="fa fa-code fa-fw"></i>  TexCreate
             Templates</a>
     </div>
 </nav>
@@ -75,13 +75,7 @@
     </p>
     <hr>
     <h2 class="w3-center"><b>Current Projects</b></h2>
-    <div class="w3-container w3-blue w3-center" style="margin-left: 50px; margin-right: 50px;">
-        <h3>Project Name</h3>
-        <h5><a href="{repo}">Repo</a> | <a href="{doc}">Documentation</a> | <a href="{crate}">Crates.io</a></h5>
-        <h5>Current Version: {curr} </h5>
-        <h5>Planned Next Version: {next}</h5>
-        <p class="w3-large">{description}</p>
-    </div>
+    {projects}
     <!-- End page content -->
 </div>
 

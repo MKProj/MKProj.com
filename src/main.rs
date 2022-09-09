@@ -2,6 +2,8 @@ use rocket::{get, launch, routes};
 use std::fs::File;
 use std::io::Write;
 use rocket::fs::NamedFile;
+use rocket::response::Redirect;
+use rocket::uri;
 mod index;
 use index::*;
 
@@ -18,8 +20,22 @@ async fn home() -> Option<NamedFile>{
     NamedFile::open("index.html").await.ok()
 }
 
+#[get("/curr_proj")]
+async fn curr_proj() -> Option<NamedFile>{
+    NamedFile::open("").await.ok()
+}
+
+#[get("/<path>")]
+async fn redirect(path: &str) -> Redirect{
+    match path{
+        "/curr_proj" => Redirect::to(uri!(curr_proj)),
+        _ => Redirect::to(uri!(home))
+    }
+}
+
+
 #[launch]
 fn rocket() -> _{
    rocket::build()
-       .mount("/", routes![home])
+       .mount("/", routes![redirect,home,curr_proj])
 }
