@@ -869,7 +869,7 @@ dependencies = [
  "rocket",
  "rss",
  "serde",
- "toml",
+ "serde_json",
 ]
 
 [[package]]

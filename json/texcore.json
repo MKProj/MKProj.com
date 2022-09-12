@@ -1,0 +1,11 @@
+{
+    "name": "Texcore", 
+    "license": "MIT & GPLv2", 
+    "curr_vers": "v0.2.4", 
+    "next_vers": null, 
+    "repo": "https://github.com/MKProj/texcore`", 
+    "documentation": "https://docs.rs/crates/texcore", 
+    "crates_io": "https://crates.io/crates/texcore", 
+    "description": "Texcore provides a library to write & compile LaTeX in Rust using a list of elements.",
+    "color": "purple"
+}

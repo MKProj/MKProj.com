@@ -5,7 +5,10 @@ use rocket::fs::NamedFile;
 use rocket::response::Redirect;
 use rocket::uri;
 mod index;
+mod project;
+
 use index::*;
+use project::*;
 
 pub type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 
@@ -22,7 +25,10 @@ async fn home() -> Option<NamedFile>{
 
 #[get("/curr_proj")]
 async fn curr_proj() -> Option<NamedFile>{
-    NamedFile::open("").await.ok()
+    let mut file = File::create("curr_proj.html").unwrap();
+    let html = gen_html();
+    file.write_all(html.as_bytes()).unwrap();
+    NamedFile::open("curr_proj.html").await.ok()
 }
 
 #[get("/<path>")]

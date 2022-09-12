@@ -1,0 +1,11 @@
+{
+    "name": "TexCreate", 
+    "license": "MIT & GPLv2", 
+    "curr_vers": "v2.2.1", 
+    "next_vers": "v3.0.0", 
+    "repo": "https://github.com/MKProj/texcreate", 
+    "documentation": "https://docs.rs/crates/texcreate", 
+    "crates_io": "https://crates.io/crates/texcreate", 
+    "description": "TexCreate is an application built to provide LaTeX users a project creator, which builds LaTeX projects using prebuilt templates.",
+    "color": "teal"
+}
